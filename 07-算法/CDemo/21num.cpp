@@ -4,15 +4,13 @@
 char ch[maxn];
 int main() {
 	int count = 0;//累加计数 
-	gets(ch+2);
-	
-	int length = strlen(ch);//获取字符长度 
-	for(int i=0;i<length;i++){	
-		ch=ch+i;	
-		if(ch!=','){
-			if(ch=='2'||ch[i]=='3'||ch[i]=='4'||ch[i]=='5'||ch[i]=='6')
+	gets(ch);	
+	printf("%d\n",length);
+	for(int i=0;i<length;i++){		
+		if(ch[i]!=','){
+			if(ch[i]=='2'||ch[i]=='3'||ch[i]=='4'||ch[i]=='5'||ch[i]=='6')
 				count++;
-			if(ch=='10'||ch[i]=='J'||ch[i]=='Q'||ch[i]=='K'||ch[i]=='A')
+			if(ch[i]=='10'||ch[i]=='J'||ch[i]=='Q'||ch[i]=='K'||ch[i]=='A')
 				count--; 
 		}
 	} 
@@ -21,5 +19,7 @@ int main() {
 	}else{
 		printf("%d %s \n",count,"Hold");	
 	}
+	return 0;
+	
 	
 }

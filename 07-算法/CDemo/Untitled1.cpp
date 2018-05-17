@@ -1,5 +1,6 @@
 #include <stdio.h>
-#include <time.h>  
+#include <time.h>
+int total;  
 typedef struct{
 	double avg;//平均值 
 	double std;//标准值 
@@ -13,7 +14,23 @@ typedef struct{
 	pwdata *wind_direction;
 	pwdata *pressure;
 	pwdata *temperature;
-}data;
+}Data;
+int caculateI(int i,Data data);//计算湍流强度 
 int main(){
-	printf("hello11");
+	
+	
 }
+int caculateI(int i,Data data,int totalNum){
+	switch(i){
+		case 0:{
+			
+			break;
+		}
+		case 1:{
+			
+			break;
+		}
+	} 
+}
+
+

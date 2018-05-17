@@ -34,4 +34,4 @@ void guess(char ch){
 		}
 		return 0;
 	}
-
+}
